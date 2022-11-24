@@ -13,3 +13,4 @@ console.log("MongoDB Connected!");
 const db = mongoClient.db("porAiStore");
 
 export const usersCollection = db.collection("users");
+export const sessionCollection = db.collection('sessions')
