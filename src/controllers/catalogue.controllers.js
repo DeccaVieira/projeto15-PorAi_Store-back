@@ -1,4 +1,4 @@
-import { catalogueCollection } from "../database/db";
+import { catalogueCollection } from "../database/db.js";
 
 export async function createPackage(req,res){
     const travelPackage = res.locals.travelPackage

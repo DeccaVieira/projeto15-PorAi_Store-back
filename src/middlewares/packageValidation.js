@@ -1,4 +1,4 @@
-import { packageSchema } from "../models/package.model"
+import { packageSchema } from "../models/package.model.js"
 
 export function packageValidation(req, res, next){
     const {from, to, daysamount ,firstday, lastday, image, price, description, stay} = req.body

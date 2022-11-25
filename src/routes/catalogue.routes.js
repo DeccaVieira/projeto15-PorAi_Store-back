@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { packageValidation } from "../middlewares/packageValidation";
-import { createPackage, fetchPackages } from "../controllers/catalogue.controllers";
+import { packageValidation } from "../middlewares/packageValidation.js";
+import { createPackage, fetchPackages } from "../controllers/catalogue.controllers.js";
 
 const router = Router();
 
