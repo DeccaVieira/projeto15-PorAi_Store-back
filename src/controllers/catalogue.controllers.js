@@ -21,6 +21,6 @@ export async function fetchPackages(req,res){
         res.send(catalogue);
     } catch (err){
         console.log(err);
-        res.sendStatus(500);
+        res.sendStatus(500); 
     }
 }
