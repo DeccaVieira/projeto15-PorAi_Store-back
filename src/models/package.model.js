@@ -19,7 +19,7 @@ export const packageSchema = Joi.object({
     "daysamount": 7,
     "firstday": "30/11/2022",
     "lastday": "7/12/2022",
-    "image": Joi.string().required(),
+    "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/59/12/0c/caption.jpg?w=1200&h=-1&s=1",
     "price": "R$ 5000,00",
     "description": "Pacote para 7 dias no paraíso cearense com passagens e estadia inclusas!",
     "stay" : "JeriCrystal - All Inclusive"
@@ -29,7 +29,7 @@ export const packageSchema = Joi.object({
     "daysamount": 6,
     "firstday": "31/11/2022",
     "lastday": "7/12/2022",
-    "image": Joi.string().required(),
+    "image": "https://www.angajurereaparthotel.com.br/wp-content/uploads/2018/07/pontes-florianopolis-sc.jpg",
     "price": "R$ 4500,00",
     "description": "Pacote para 6 dias na animada capital Catarinense com passagens e estadia inclusas!",
     "stay" : "FloripaCrystal"
@@ -39,7 +39,7 @@ export const packageSchema = Joi.object({
     "daysamount": 8,
     "firstday": "31/11/2022",
     "lastday": "9/12/2022",
-    "image": Joi.string().required(),
+    "image": "https://viajecomnorma.com.br/wp-content/uploads/2021/03/Jalapao-Fervedouro-Bela-Vista-tiny.jpg",
     "price": "R$ 4800,00",
     "description": "Pacote para 8 dias neste incrível parque natural com passagens e estadia inclusas!",
     "stay" : "Jalapalace"
@@ -49,7 +49,7 @@ export const packageSchema = Joi.object({
     "daysamount": 7,
     "firstday": "30/11/2022",
     "lastday": "7/12/2022",
-    "image": Joi.string().required(),
+    "image": "http://s2.glbimg.com/R_FXsP-CoT9Dw3INb1WvEq3Erpk=/620x465/s.glbimg.com/jo/g1/f/original/2015/07/03/gruta_lago_azul_bonito1.jpg",
     "price": "R$ 4300,00",
     "description": "Pacote para 7 dias neste incrível paraíso do Mato Grosso do Sul com passagens e estadia inclusas!",
     "stay" : "Bonito Palace"
@@ -59,7 +59,7 @@ export const packageSchema = Joi.object({
     "daysamount": 6,
     "firstday": "31/11/2022",
     "lastday": "7/12/2022",
-    "image": Joi.string().required(),
+    "image": "https://www.viagenscinematograficas.com.br/wp-content/uploads/2019/05/Barreirinhas-Lencois-Maranhenses-Lagoa-Azul-Capa.jpg",
     "price": "R$ 5000,00",
     "description": "Pacote para 6 dias nos maravilhosos Lençóis Maranhenses com passagens e estadia inclusas!",
     "stay" : "Barreirinhas Crystal - All Inclusive"
@@ -69,7 +69,7 @@ export const packageSchema = Joi.object({
     "daysamount": 7,
     "firstday": "31/11/2022",
     "lastday": "8/12/2022",
-    "image": Joi.string().required(),
+    "image": "https://a.cdn-hotels.com/gdcs/production9/d1392/20bf9109-196c-482e-ac7a-07d4c1761c5c.jpg",
     "price": "R$ 4000,00",
     "description": "Pacote para 7 dias para este paradisíaco destino na Bahia com passagens e estadia inclusas!",
     "stay" : "Trancoso Premium - All Inclusive"
@@ -79,8 +79,8 @@ export const packageSchema = Joi.object({
     "daysamount": 7,
     "firstday": "30/11/2022",
     "lastday": "7/12/2022",
-    "image": Joi.string().required(),
-    "price": "R$ 5000,00",
+    "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/59/12/0c/caption.jpg?w=1200&h=-1&s=1",
+    "price": "R$ 4900,00",
     "description": "Pacote para 7 dias no paraíso cearense com passagens e estadia inclusas!",
     "stay" : "JeriCrystal - All Inclusive"
 
@@ -89,8 +89,8 @@ export const packageSchema = Joi.object({
     "daysamount": 6,
     "firstday": "31/11/2022",
     "lastday": "7/12/2022",
-    "image": Joi.string().required(),
-    "price": "R$ 4500,00",
+    "image": "https://www.angajurereaparthotel.com.br/wp-content/uploads/2018/07/pontes-florianopolis-sc.jpg",
+    "price": "R$ 4700,00",
     "description": "Pacote para 6 dias na animada capital Catarinense com passagens e estadia inclusas!",
     "stay" : "FloripaCrystal"
 
@@ -99,7 +99,7 @@ export const packageSchema = Joi.object({
     "daysamount": 8,
     "firstday": "31/11/2022",
     "lastday": "9/12/2022",
-    "image": Joi.string().required(),
+    "image": "https://viajecomnorma.com.br/wp-content/uploads/2021/03/Jalapao-Fervedouro-Bela-Vista-tiny.jpg",
     "price": "R$ 4800,00",
     "description": "Pacote para 8 dias neste incrível parque natural com passagens e estadia inclusas!",
     "stay" : "Jalapalace"
@@ -109,8 +109,8 @@ export const packageSchema = Joi.object({
     "daysamount": 7,
     "firstday": "30/11/2022",
     "lastday": "7/12/2022",
-    "image": Joi.string().required(),
-    "price": "R$ 4300,00",
+    "image": "http://s2.glbimg.com/R_FXsP-CoT9Dw3INb1WvEq3Erpk=/620x465/s.glbimg.com/jo/g1/f/original/2015/07/03/gruta_lago_azul_bonito1.jpg",
+    "price": "R$ 4150,00",
     "description": "Pacote para 7 dias neste incrível paraíso do Mato Grosso do Sul com passagens e estadia inclusas!",
     "stay" : "Bonito Palace"
 
@@ -119,8 +119,8 @@ export const packageSchema = Joi.object({
     "daysamount": 6,
     "firstday": "31/11/2022",
     "lastday": "7/12/2022",
-    "image": Joi.string().required(),
-    "price": "R$ 5000,00",
+    "image": "https://www.viagenscinematograficas.com.br/wp-content/uploads/2019/05/Barreirinhas-Lencois-Maranhenses-Lagoa-Azul-Capa.jpg",
+    "price": "R$ 5100,00",
     "description": "Pacote para 6 dias nos maravilhosos Lençóis Maranhenses com passagens e estadia inclusas!",
     "stay" : "Barreirinhas Crystal - All Inclusive"
 
@@ -129,7 +129,7 @@ export const packageSchema = Joi.object({
     "daysamount": 7,
     "firstday": "31/11/2022",
     "lastday": "8/12/2022",
-    "image": Joi.string().required(),
+    "image": "https://a.cdn-hotels.com/gdcs/production9/d1392/20bf9109-196c-482e-ac7a-07d4c1761c5c.jpg",
     "price": "R$ 4000,00",
     "description": "Pacote para 7 dias para este paradisíaco destino na Bahia com passagens e estadia inclusas!",
     "stay" : "Trancoso Premium - All Inclusive"

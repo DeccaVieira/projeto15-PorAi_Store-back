@@ -1,3 +1,5 @@
+import { catalogueCollection } from "../database/db";
+
 export async function createPackage(req,res){
     const travelPackage = res.locals.travelPackage
 
@@ -10,4 +12,15 @@ export async function createPackage(req,res){
     }
 }
 
-export async function fetchPackages(req,res){}
+export async function fetchPackages(req,res){
+    try{
+        const catalogue = await catalogueCollection
+        .find()
+        .toArray();
+
+        res.send(catalogue);
+    } catch (err){
+        console.log(err);
+        res.sendStatus(500);
+    }
+}
