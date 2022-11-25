@@ -13,6 +13,11 @@ export async function userSchemaValidation(req, res, next) {
       .status(409)
       .send({ message: "Confirmação de senha não confere!" });
   }
+  if (user.email !== user.validateEmail) {
+    return res
+      .status(409)
+      .send({ message: "Confirmação de email não confere!" });
+  }
   const { error } = userSchema.validate(user, { abortEarly: false });
   if (error) {
     const errors = error.details.map((detail) => detail.message);

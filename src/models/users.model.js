@@ -6,10 +6,10 @@ export const userSchema = joi.object({
   validateEmail: joi.string().email().required(),
   password: joi.string().required(),
   validatePass: joi.string().required(),
-  gender: joi
-    .string()
-    .required()
-    .valid("feminino", "masculino", "prefiro não informar")
-    .required(),
+  // gender: joi
+  //   .string()
+  //   .required()
+  //   .valid("feminino", "masculino", "prefiro não informar")
+  //   .required(),
   phoneNumber: joi.string().required(),
 });
