@@ -12,7 +12,7 @@ console.log("MongoDB Connected!")
     console.log(err)
 }
  
-const db = mongoClient.db("PorAiStore");
+const db = mongoClient.db("porAiStore");
 export const usersCollection = db.collection("users");
 export const sessionsCollection = db.collection("sessions");
 

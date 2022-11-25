@@ -1,4 +1,4 @@
-import { sessionCollection, usersCollection } from "../database/db.js";
+import { sessionsCollection, usersCollection } from "../database/db.js";
 import bcrypt from "bcrypt";
 import {v4 as uuidV4} from 'uuid';
 
@@ -19,7 +19,7 @@ export async function sigIn(req, res) {
 const token = uuidV4();
 
 try{
-await sessionCollection.insertOne({token, useId: user._id});
+await sessionsCollection.insertOne({token, useId: user._id});
 res.send({token})
 }catch(error){
     console.log(error);

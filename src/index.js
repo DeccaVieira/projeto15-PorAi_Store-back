@@ -4,7 +4,6 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 import authRoutes from "./routes/auth.routes.js"
-import mongoClient from './database/db.js'
 
 const app = express();
 

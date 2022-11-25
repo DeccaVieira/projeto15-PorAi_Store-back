@@ -5,7 +5,7 @@ import { signInBodyValidation, userSchemaValidation } from '../middlewares/authV
 const router = Router();
 
 router.post("/sign-up", userSchemaValidation ,signUp);
-router.post("/sign-in", signInBodyValidation,sigIn);
+router.post("/sign-in", signInBodyValidation, sigIn);
 
 
 export default router;
