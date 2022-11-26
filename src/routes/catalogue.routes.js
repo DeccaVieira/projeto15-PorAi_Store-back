@@ -5,6 +5,6 @@ import { createPackage, fetchPackages } from "../controllers/catalogue.controlle
 const router = Router();
 
 router.post("/catalogue",packageValidation, createPackage);
-router.get("/catalogue", fetchPackages)
+router.get("/catalogue",fetchPackages)
 
 export default router;
