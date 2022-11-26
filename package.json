@@ -5,22 +5,20 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon src/index.js",
-    "start": "node src/index.js"
+    "dev": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DeccaVieira/projeto15-PorAi_Store-back.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Decca Vieira, Julia Botelho",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/DeccaVieira/projeto15-PorAi_Store-back/issues"
   },
   "homepage": "https://github.com/DeccaVieira/projeto15-PorAi_Store-back#readme",
   "dependencies": {
-    "bcrypt": "^5.1.0",
     "cors": "^2.8.5",
     "dayjs": "^1.11.6",
     "dotenv": "^16.0.3",

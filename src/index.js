@@ -6,6 +6,7 @@ dotenv.config();
 import authRoutes from "./routes/auth.routes.js"
 import catalogueRoutes from "./routes/catalogue.routes.js"
 
+
 const app = express();
 
 app.use(express.json());
