@@ -5,7 +5,7 @@ export async function createPackage(req, res) {
 
   try {
     await catalogueCollection.insertOne(travelPackage);
-    console.log(travelPackage, "teste");
+
     res.sendStatus(201);
   } catch (err) {
     console.log(err);
@@ -14,48 +14,39 @@ export async function createPackage(req, res) {
 }
 
 export async function fetchPackages(req, res) {
-  const { from , price, stay, daysamount} = req.query;
+  const { from, price, stay, daysamount } = req.query;
 
   try {
     const catalogue = await catalogueCollection.find().toArray();
 
-    
     if (from) {
-        const filterFrom = catalogue.filter(
-          (travel) => travel.from.toLowerCase().indexOf(from.toLowerCase()) >= 0
-        );
-        res.send(filterFrom);
-        return;
-      }
+      const filterFrom = catalogue.filter(
+        (travel) => travel.from.toLowerCase().indexOf(from.toLowerCase()) >= 0
+      );
+      res.send(filterFrom);
+      return;
+    }
 
-      if (stay) {
-        const filterStay = catalogue.filter(
-          (travel) => travel.stay.toLowerCase().indexOf(stay.toLowerCase()) >= 0
-        );
-        res.send(filterStay);
-        return;
-      }
-
+    if (stay) {
+      const filterStay = catalogue.filter(
+        (travel) => travel.stay.toLowerCase().indexOf(stay.toLowerCase()) >= 0
+      );
+      res.send(filterStay);
+      return;
+    }
 
     if (price) {
       const filterPrice = catalogue.filter(
-        (travel) => travel.price.replace("R$","").indexOf(price) >= 0
+        (travel) => travel.price.replace("R$", "").indexOf(price) >= 0
       );
-  
+
       res.send(filterPrice);
       return;
     }
 
-  
-
-
-
-
     res.send(catalogue);
-
   } catch (err) {
     console.log(err);
     res.sendStatus(500);
   }
 }
-
