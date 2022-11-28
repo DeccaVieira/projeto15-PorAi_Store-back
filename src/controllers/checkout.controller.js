@@ -12,6 +12,18 @@ export async function createCheckout(req, res) {
     await finalizeCollection.insertMany(cartsWithNold);
 await shoppingCartCollection.deleteMany({user:user._Id})
 res.sendStatus(200);
+} catch (err) {
+  console.log(err);
+  res.sendStatus(500);
+}
+}
+export async function showCheckout(req, res) {
+  const user = res.locals.user;
+  
+  try {
+    const purchases = await finalizeCollection.find({ user: user._id }).toArray();
+  res.send(purchases)
+    
 
   } catch (err) {
     console.log(err);
