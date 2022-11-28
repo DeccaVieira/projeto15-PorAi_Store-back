@@ -16,13 +16,14 @@ export async function signUp(req, res) {
 
 export async function sigIn(req, res) {
     const user = res.locals.user;
+    console.log(user, "user auth");
 const token = uuidV4();
 
 try{
 await sessionsCollection.insertOne({token, useId: user._id});
-res.send({token})
+return res.send({token})
 }catch(error){
     console.log(error);
-    res.sendStatus(500);
+ return   res.sendStatus(500);
 }
 }
