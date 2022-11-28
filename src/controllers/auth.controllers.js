@@ -21,7 +21,7 @@ const token = uuidV4();
 
 try{
 await sessionsCollection.insertOne({token, useId: user._id});
-return res.send({token})
+return res.send({token, email:user.email, name:user.name, phoneNumber:user.phoneNumber})
 }catch(error){
     console.log(error);
  return   res.sendStatus(500);
